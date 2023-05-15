@@ -5,8 +5,12 @@
     font-family: 'Lobster', cursive;
 }
 
+.body-background {
+  background-color: #99B660;
+}
+
 .home {
-    background-image: url('https://c4.wallpaperflare.com/wallpaper/779/691/639/movies-film-reel-technology-projector-8mm-wallpaper-preview.jpg');
+    background-image: url('https://www.nosequeestudiar.net/site/assets/files/1849744/proyeccionista-de-cine_hr.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,6 +20,7 @@
 
 legend {
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
 }
 
 h1 {
@@ -24,6 +29,11 @@ h1 {
   text-align: center;
   margin-bottom: 20px;
   color: rgb(236, 153, 18);
+}
+
+p {
+  color: rgb(241, 232, 232);
+  font-size: 25px;
 }
 
 .container_index {
@@ -85,6 +95,10 @@ label {
   background-color: #0275f0;
 }
 
+.inicio_button {
+  color: white;
+}
+
 #nav-bar{  
   position: absolute;
   top: 5rem;
@@ -109,7 +123,6 @@ label {
   /* Cambia el ancho máximo del contenedor para pantallas más pequeñas */
   .container {
     max-width: 90%;
-    flex-direction: column-reverse;
   }
 }
 
