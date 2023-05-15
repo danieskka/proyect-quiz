@@ -1,3 +1,143 @@
-body {
-    background-color: ghostwhite;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+
+* {
+    font-family: 'Lobster', cursive;
+}
+
+.body-background {
+  background-color: #99B660;
+}
+
+.home {
+    background-image: url('https://www.nosequeestudiar.net/site/assets/files/1849744/proyeccionista-de-cine_hr.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+legend {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+  /* margin-top: -350px; */
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(236, 153, 18);
+}
+
+p {
+  color: rgb(241, 232, 232);
+  font-size: 25px;
+}
+
+.container_index {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Espacio entre cajas */
+    align-items: center;
+    justify-content: center;
+}
+  
+.box {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+legend {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+.form {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+.form button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+.inicio_button:hover {
+  background-color: #0275f0;
+}
+
+.inicio_button {
+  color: white;
+}
+
+#nav-bar{  
+  position: absolute;
+  top: 5rem;
+  padding: 10px;
+  color: white;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+  /* Cambia el tamaño del texto para pantallas más pequeñas */
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  #nav-bar{  
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  /* Cambia el ancho máximo del contenedor para pantallas más pequeñas */
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Cambia el tamaño del texto y la imagen para pantallas más pequeñas */
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  #nav-bar{  
+    font-size: 1rem;
+  }
+
+  img {
+    width: 90%;
+  }
 }
