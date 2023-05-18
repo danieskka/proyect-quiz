@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
+    <title>Formulario Quiz</title>
+</head>
+<body class="body-background">
+    <main>
+        <form class="container">
+            
+            <p>PREGUNTA 1: </p>
+            <legend>¿Quien fue el director de la famosa pelicula Jurassic Park estrenada en el año 1993?</legend>
+            <fieldset class="box">
+                <div><img src ="https://i.blogs.es/b7822d/jurassic-park-poster/1366_2000.jpg" width="350" height="200px" alt="jurassic-park"></div>
+                <label for="james-cameron">James Cameron</label>
+                <input id="james-cameron" type="radio" name="director" value="cameron" required>
+          
+                <label for="peter-jackson">Peter Jackson</label>
+                <input id="peter-jackson" type="radio" name="director" value="jackson" required>
+          
+                <label for="steven-spielberg">Steven Spielberg</label>
+                <input id="steven-spielberg" type="radio" name="director" value="spielberg" required>
+          
+                <label for="martin-scorsese">Martin Scorsese</label>
+                <input id="martin-scorsese" type="radio" name="director" value="scorsese" required>
+            </fieldset>
+
+            <p>PREGUNTA 2: </p>
+            <legend>¿Cual es actualmente la pelicula mas taquillera de la historia?</legend>
+            <fieldset class="box">
+                <div><img src ="https://e00-expansion.uecdn.es/blogs/mcgufilms/imagenes_posts/2016/08/08/172367.jpg" width="350" height="200px" alt="pelicula-taquillera"></div>
+                <label for="titanic">Titanic</label>
+                <input id="titanic" type="radio" name="grossing" value="titanic" required>
+          
+                <label for="vengadores">Vengadores: Endgame</label>
+                <input id="vengadores" type="radio" name="grossing" value="vengadores" required>
+          
+                <label for="starwars">Star Wars VII - El Despertar de la Fuerza</label>
+                <input id="starwars" type="radio" name="grossing" value="starwars" required>
+          
+                <label for="avatar">Avatar</label>
+                <input id="avatar" type="radio" name="grossing" value="avatar" required>
+            </fieldset>
+            
+
+            <p>PREGUNTA 3: </p>
+            <legend>¿Cual de las siguientes peliculas NO pertenece al famoso director Quentin Tarantino?</legend>
+            <fieldset class="box">
+                
+                <div><img src ="https://s1.eestatic.com/2023/02/09/el-cultural/cine/740186113_231654746_1706x960.jpg" width="350" height="200px" alt="quentin-tarantino"></div>
+                <label for="reservoir-dogs">Reservoir Dogs</label>
+                <input id="reservoir-dogs" type="radio" name="tarantino" value="reservoir-dogs" required>
+          
+                <label for="snatch">Snatch, Cerdos y Diamantes</label>
+                <input id="snatch" type="radio" name="tarantino" value="snatch" required>
+          
+                <label for="hostel">Hostel</label>
+                <input id="hostel" type="radio" name="tarantino" value="hostel" required>
+          
+                <label for="inglorious-bastards">Inglorious Bastards</label>
+                <input id="inglorious-bastards" type="radio" name="tarantino" value="inglorious-bastards" required>
+            </fieldset>
+              
+        
+            <p>PREGUNTA 4: </p>
+            <legend>¿Cual es la saga de peliculas más vendida de la historia?</legend>
+            <fieldset class="box">
+                <div><img src ="https://i.blogs.es/6600e1/star-wars/840_560.jpg" width="350" height="200px" alt="saga-mas-vendida"></div>
+                <label for="star-wars">Star Wars saga completa</label>
+                <input id="star-wars" type="radio" name="saga" value="star-wars" required>
+          
+                <label for="lord-of-rings">El Señor de los Anillos</label>
+                <input id="lord-of-rings" type="radio" name="saga" value="rings" required>
+          
+                <label for="avengers-saga">Vengadores Saga de Marvel Studios</label>
+                <input id="avengers-saga" type="radio" name="saga" value="avengers" required>
+          
+                <label for="harry-potter">Harry Potter</label>
+                <input id="harry-potter" type="radio" name="saga" value="harry" required>
+            </fieldset>
+              
+
+            <p>PREGUNTA 5: </p>
+            <legend>¿Cual de las siguientes peliculas NO pertenece a Disney Pixar Studios?</legend>
+            <fieldset class="box">
+                <div><img src ="https://static3.lasprovincias.es/cosaspracticas/multimedia/201801/08/media/cortadas/pixar-1-kNcG-U50572403310pqG-624x385@Las%20Provincias.jpg" width="350" height="200px" alt="disney-pixar"></div>
+                <label for="ralph-rompe-internet">Ralph Rompe Internet</label>
+                <input id="ralph-rompe-internet" type="radio" name="disney" value="ralph" required>
+          
+                <label for="cars">Cars</label>
+                <input id="cars" type="radio" name="disney" value="car" required>
+          
+                <label for="monstruos">Monstruos S.A</label>
+                <input id="monstruos" type="radio" name="disney" value="monstruosinc" required>
+          
+                <label for="ratatouille">Ratatouille</label>
+                <input id="ratatouille" type="radio" name="disney" value="ratatouillem" required>
+            </fieldset>
+
+            <p>PREGUNTA 6: </p>
+            <legend>¿En que película mencionada a continuación te recuerda esta escena?</legend>
+            <fieldset class="box">
+                <div><img src ="https://sm.ign.com/t/ign_es/screenshot/default/pasajero2_bz7k.960.jpg" width="350" height="200px" alt="movie-scene"></div>
+                <label for="jaws">Tiburón</label>
+                <input id="jaws" type="radio" name="moviescene1" value="jawst" required>
+          
+                <label for="ryan">Salvar al Soldado Ryan</label>
+                <input id="ryan" type="radio" name="moviescene1" value="ryans" required>
+          
+                <label for="terminator">Terminator</label>
+                <input id="terminator" type="radio" name="moviescene1" value="termin" required>
+          
+                <label for="alien">Alien</label>
+                <input id="alien" type="radio" name="moviescene1" value="alien1" required>
+            </fieldset>
+
+            <p>PREGUNTA 7: </p>
+            <legend>¿En que película mencionada a continuación te recuerda esta escena?</legend>
+            <fieldset class="box">
+                <div><img src ="https://sm.ign.com/t/ign_es/screenshot/default/07_tdcd.960.jpg" width="350" height="200px" alt="movie-scene2"></div>
+                <label for="terminator2">Terminator</label>
+                <input id="terminator2" type="radio" name="moviescene2" value="term2" required>
+          
+                <label for="bladerunner">Blade Runner</label>
+                <input id="bladerunner" type="radio" name="moviescene2" value="blade" required>
+          
+                <label for="rocky">Rocky</label>
+                <input id="rocky" type="radio" name="moviescene2" value="rockyb" required>
+          
+                <label for="jungla">Jungla de Cristal</label>
+                <input id="jungla" type="radio" name="moviescene2" value="crystal" required>
+            </fieldset>
+            
+            <p>PREGUNTA 8: </p>
+            <legend>¿En que película mencionada a continuación te recuerda esta escena?</legend>
+            <fieldset class="box">
+                <div><img src ="https://sm.ign.com/t/ign_es/screenshot/default/empire-strikes-back-1561212358017_rk1k.960.jpg" width="350" height="200px" alt="movie-scene3"></div>
+                <label for="vader-luke">Star Wars IV, Una Nueva Esperanza</label>
+                <input id="vader-luke" type="radio" name="moviescene3" value="obiwan" required>
+          
+                <label for="vader-luke1">Star Wars V, El Imperio Contraataca</label>
+                <input id="vader-luke1" type="radio" name="moviescene3" value="obiwanright" required>
+          
+                <label for="vader-luke2">Star Wars VI, El Retorno del Jedi</label>
+                <input id="vader-luke2" type="radio" name="moviescene3" value="obiwan1" required>
+          
+                <label for="vader-luke3">Star Wars VII, El Despertar de la Fuerza</label>
+                <input id="vader-luke3" type="radio" name="moviescene3" value="obiwan2" required>
+            </fieldset>
+
+            <p>PREGUNTA 9: </p>
+            <legend>¿En que película mencionada a continuación te recuerda esta escena?</legend>
+            <fieldset class="box">
+                <div><img src ="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/950/public/media/image/2021/01/club-poetas-muertos-2193247.jpg?itok=C1NFnFKH" width="350" height="200px" alt="movie-scene4"></div>
+                <label for="cinco">El Club de los Cinco</label>
+                <input id="cinco" type="radio" name="moviescene4" value="cinco-club" required>
+          
+                <label for="reb">Rebelión en las Aulas</label>
+                <input id="reb" type="radio" name="moviescene4" value="rebelion" required>
+          
+                <label for="poet">El Club de los Poetas Muertos</label>
+                <input id="poet" type="radio" name="moviescene4" value="poetas" required>
+          
+                <label for="oxf">Los Crimenes de Oxford</label>
+                <input id="oxf" type="radio" name="moviescene4" value="oxford" required>
+            </fieldset>
+
+            <p>PREGUNTA 10: </p>
+            <legend>¿En que película mencionada a continuación te recuerda esta escena?</legend>
+            <fieldset class="box">
+                <div><img src ="https://elcomercio.pe/resizer/ogaw94NLWMs0jPAJ7lhXOaqHKoY=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/4RN4XL7YS5HPBEGJTXCW5XJZDM.jpg" width="350" height="200px" alt="movie-scene5"></div>
+                <label for="harry1">Harry Potter 2 y la Camara Secreta</label>
+                <input id="harry1" type="radio" name="moviescene5" value="camara" required>
+          
+                <label for="harry2">Harry Potter 5 y la Orden del Fenix</label>
+                <input id="harry2" type="radio" name="moviescene5" value="orden" required>
+          
+                <label for="harry3">Harry Potter 4 y el Caliz de Fuego</label>
+                <input id="harry3" type="radio" name="moviescene5" value="caliz" required>
+          
+                <label for="harry4">Harry Potter 3 y el Prisionero de Azkaban</label>
+                <input id="harry4" type="radio" name="moviescene5" value="azkaban" required>
+            </fieldset>
+
+                <button type="submit">Comprobar respuestas</button>
+
+        </form>
+    </main>
+    
+    <footer>
+        <a href="index.html" class="inicio_button">Volver al Inicio</a>
+    </footer>
+
+<script src="sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+<script defer src="scripts.js"></script>
+</body>
+</html>
