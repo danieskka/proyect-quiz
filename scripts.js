@@ -35,6 +35,7 @@ const responses = {
 // comparamos nuestro objeto con las respuestas correctas y las recogidas por el usuario
 
 const questionBox = document.getElementsByClassName('box');
+let counter = 0;
 
 Object.keys(responses).forEach(function(question, index) {
     Swal.fire({
@@ -49,6 +50,7 @@ Object.keys(responses).forEach(function(question, index) {
     
     if (checkedOption.includes(responses[question])) {
         box.style.backgroundColor = 'green';
+        counter++;
     } else {
         box.style.backgroundColor = 'red';
     }
